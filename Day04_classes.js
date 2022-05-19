@@ -8,22 +8,27 @@
 //     this.size = size;
 //     this.perimeter = perimeter;
 // }
+// function perimeter() {
+//     let result = 0;
+//     for(let i=0; i<this.size.length; i++) {
+//         result += this.size[i];
+//     }
+//     return result;
+// }
 
 class Polygon {
     constructor(size) {
         this.size = size;
-        this.perimeter = perimeter;
+    }
+
+    perimeter() {
+        let result = 0;
+        for(let i=0; i<this.size.length; i++) {
+            result += this.size[i];
+        }
+        return result;
     }
 }
-
-function perimeter() {
-    let result = 0;
-    for(let i=0; i<this.size.length; i++) {
-        result += this.size[i];
-    }
-    return result;
-}
-
 
 const rectangle = new Polygon([10, 20, 10, 20]);
 const square = new Polygon([10, 10, 10, 10]);
